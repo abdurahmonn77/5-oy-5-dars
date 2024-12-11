@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+body{
+    background: linear-gradient(135deg, #ff7eb3, #ff758c, #ff9a76, #ffc371);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

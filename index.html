@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+    <title>Todo list</title>
+</head>
+<body>
+    <div class="w-[1200px] px-10px mx-auto mb-[50px]">
+        <form class="todo-form pt-[30px] flex justify-center">
+            <input type="text" name="Todo input" class="todo-input w-[400px] bg-white py-[20px] border-[1px] border-black pl-[20px] rounded-l-3xl outline-0" placeholder="Add something to do...">
+            <button type="submit" class="submit-btn w-[100px] py-[20px] bg-green-500 hover:bg-green-700 rounded-r-3xl border-[1px] border-black">Add</button>
+        </form>
+    </div>
+        <div class="todo-section w-[800px] px-10px mx-auto">
+            <div class="wrapper flex w-[400px] justify-around items-center border-[2px] border-black mx-auto rounded-[40px] mb-[25px]">
+                <div class="all-btn border-r-[2px] border-black w-[33%] text-center cursor-pointer hover:bg-gray-500 bg-white py-[10px] rounded-l-[40px] hover:text-white duration-200">
+                    All 
+                </div>
+                <div class="Completed-btn border-r-[2px] border-black w-[33%] text-center cursor-pointer hover:bg-green-500 bg-white py-[10px] hover:text-white duration-200">
+                    Completed 
+                </div>
+                <div class="uncompleted-btn w-[33%] text-center cursor-pointer hover:bg-red-500 bg-white py-[10px] rounded-r-[40px] hover:text-white duration-200">
+                    Uncompleted 
+                </div>
+            </div>
+            <hr>
+        <ul class="todo-list mt-[25px] h-[450px] overflow-auto  ">
+        </ul>
+        </div>
+</body>
+<script src="./JS/main.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</html>
+
